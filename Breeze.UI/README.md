@@ -7,7 +7,7 @@ Graphical User Interface for Stratis Breeze Wallet.
 Clone this repository locally:
 
 ``` bash
-git clone https://www.github.com/stratisproject/breeze.git
+git clone https://www.github.com/impleum/breeze.git
 ```
 
 Navigate to the Breeze UI in a terminal:
@@ -35,7 +35,7 @@ If you have already installed a previous version of `angular-cli`, follow [Angul
 ## To build for development
 
 #### Terminal Window 1
-[Run the daemon](https://github.com/stratisproject/Breeze/blob/master/README.md#daemon-build)  
+[Run the daemon](https://github.com/impleum/Breeze/blob/master/README.md#daemon-build)  
 
 #### Terminal Window 2
 `npm start`  
