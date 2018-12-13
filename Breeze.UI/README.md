@@ -1,6 +1,6 @@
-# Breeze.UI
+# Impleum Breeze.UI
 
-Graphical User Interface for Stratis Breeze Wallet.
+Graphical User Interface for Impleum Breeze Wallet.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ Clone this repository locally:
 git clone https://www.github.com/impleum/breeze.git
 ```
 
-Navigate to the Breeze UI in a terminal:
+Navigate to the Impleum Breeze UI in a terminal:
 ``` bash
 cd ./Breeze/Breeze.UI
 ```
