@@ -25,7 +25,7 @@ dotnet build
 
 # Run the Bitcoin and Stratis full-SPV daemons on testnet in separate terminals
 dotnet run -testnet
-dotnet run stratis -testnet
+dotnet run impleum -testnet
 ```
 
 ## UI Build
