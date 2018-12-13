@@ -13,7 +13,7 @@ Breeze daemon is the backend REST service, hosting a Bitcoin node upon which Bre
 
 ```
 # Clone and go in the directory
-git clone https://github.com/stratisproject/Breeze
+git clone https://github.com/impleum/Breeze
 cd Breeze
 
 # Initialize dependencies
@@ -30,7 +30,7 @@ dotnet run stratis -testnet
 
 ## UI Build
 
-[Read more...](https://github.com/stratisproject/Breeze/blob/master/Breeze.UI/README.md)
+[Read more...](https://github.com/impleum/Breeze/blob/master/Breeze.UI/README.md)
 
 ## CI Build
 -----------
@@ -39,5 +39,5 @@ Every time someone pushes to the master branch or create a pull request on it, a
 
 If you want the :sparkles: latest :sparkles: (unstable :bomb:) version of the Breeze app, you can get it here: 
 
-https://github.com/stratisproject/Breeze/releases/tag/Continuous-Delivery
+https://github.com/impleum/Breeze/releases/tag/Continuous-Delivery
 
