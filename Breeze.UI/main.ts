@@ -74,11 +74,11 @@ function createWindow() {
 // Some APIs can only be used after this event occurs.
 app.on('ready', function () {
   if (serve) {
-    console.log("Breeze UI was started in development mode. This requires the user to be running the Breeze Daemon himself.")
+    console.log("Impleum Breeze UI was started in development mode. This requires the user to be running the Breeze Daemon himself.")
   }
   else {
     startBitcoinApi();
-    startStratisApi();
+    startImpleumApi();
   }
   createTray();
   createWindow();
@@ -89,7 +89,7 @@ app.on('ready', function () {
 
 app.on('before-quit', function () {
   closeBitcoinApi(),
-  closeStratisApi();
+  closeImpleumApi();
 });
 
 // Quit when all windows are closed.
@@ -115,7 +115,7 @@ function closeBitcoinApi() {
     var http1 = require('http');
     const options1 = {
       hostname: 'localhost',
-      port: 37220,
+      port: 38220,
       path: '/api/node/shutdown',
       method: 'POST'
   };
@@ -126,13 +126,13 @@ function closeBitcoinApi() {
   }
 };
 
-function closeStratisApi() {
+function closeImpleumApi() {
   // if (process.platform !== 'darwin' && !serve) {
     if (process.platform !== 'darwin' && !serve) {
     var http2 = require('http');
     const options2 = {
       hostname: 'localhost',
-      port: 37221,
+      port: 39222,
       path: '/api/node/shutdown',
       method: 'POST'
     };
@@ -148,13 +148,13 @@ function startBitcoinApi() {
   const spawnBitcoin = require('child_process').spawn;
 
   //Start Breeze Bitcoin Daemon
-  let apiPath = path.resolve(__dirname, 'assets//daemon//Stratis.BreezeD');
+  let apiPath = path.resolve(__dirname, 'assets//daemon//Impleum.BreezeD');
   if (os.platform() === 'win32') {
-    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Stratis.BreezeD.exe');
+    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Impleum.BreezeD.exe');
   } else if(os.platform() === 'linux') {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   } else {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   }
 
 
@@ -174,32 +174,32 @@ function startBitcoinApi() {
   });
 }
 
-function startStratisApi() {
-  var stratisProcess;
-  const spawnStratis = require('child_process').spawn;
+function startImpleumApi() {
+  var impleumProcess;
+  const spawnImpleum = require('child_process').spawn;
 
-  //Start Breeze Stratis Daemon
-  let apiPath = path.resolve(__dirname, 'assets//daemon//Stratis.BreezeD');
+  //Start Breeze Impleum Daemon
+  let apiPath = path.resolve(__dirname, 'assets//daemon//Impleum.BreezeD');
   if (os.platform() === 'win32') {
-    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Stratis.BreezeD.exe');
+    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Impleum.BreezeD.exe');
   } else if(os.platform() === 'linux') {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   } else {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   }
 
   if (!testnet) {
-    stratisProcess = spawnStratis(apiPath, ['stratis'], {
+    impleumProcess = spawnImpleum(apiPath, ['impleum'], {
       detached: true
     });
   } else if (testnet) {
-    stratisProcess = spawnStratis(apiPath, ['stratis', '-testnet'], {
+    impleumProcess = spawnImpleum(apiPath, ['impleum', '-testnet'], {
       detached: true
     });
   }
 
-  stratisProcess.stdout.on('data', (data) => {
-    writeLog(`Stratis: ${data}`);
+  impleumProcess.stdout.on('data', (data) => {
+    writeLog(`Impleum: ${data}`);
   });
 }
 
@@ -230,7 +230,7 @@ function createTray() {
       }
     }
   ]);
-  systemTray.setToolTip('Breeze Wallet');
+  systemTray.setToolTip('Impleum Breeze Wallet');
   systemTray.setContextMenu(contextMenu);
   systemTray.on('click', function() {
     if (!mainWindow.isVisible()) {

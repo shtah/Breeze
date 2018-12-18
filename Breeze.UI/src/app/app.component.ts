@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
   }
 
   private setTitle() {
-    const applicationName = "Stratis Breeze Wallet";
+    const applicationName = "Impleum Breeze Wallet";
     const newTitle = applicationName + " v" + remote.app.getVersion();
     this.titleService.setTitle(newTitle);
   }
