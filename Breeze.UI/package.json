@@ -1,17 +1,17 @@
 {
-  "name": "BreezeWallet",
-  "description": "Breeze Wallet: Stratis' dual-currency full block light wallet with a strong focus on privacy.",
+  "name": "LiteWallet",
+  "description": "Lite Wallet: Impleum' dual-currency full block light wallet with a strong focus on privacy.",
   "version": "1.0.1",
   "author": {
-    "name": "Stratis Group",
-    "email": "info@stratisplatform.com"
+    "name": "Impleum Platform",
+    "email": "info@impleum.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/stratisproject/breeze",
+  "homepage": "https://github.com/impleum/lite",
   "keywords": [
-    "breeze",
+    "lite",
     "ui",
-    "stratis",
+    "impleum",
     "bitcoin",
     "angular",
     "electron",

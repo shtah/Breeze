@@ -1,4 +1,4 @@
-# Impleum Breeze.UI
+# Impleum Lite.UI
 
 Graphical User Interface for Impleum Breeze Wallet.
 
