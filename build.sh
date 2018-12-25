@@ -50,7 +50,7 @@ echo $log_prefix running 'dotnet publish'
 cd $TRAVIS_BUILD_DIR/StratisBitcoinFullNode/src/Impleum.BreezeD
 dotnet publish -c $configuration -r $TRAVIS_OS_NAME-$arch -v m -o $TRAVIS_BUILD_DIR/Breeze.UI/daemon
 
-echo $log_prefix chmoding the Stratis.BreezeD file
+echo $log_prefix chmoding the Impleum.BreezeD file
 chmod +x $TRAVIS_BUILD_DIR/Breeze.UI/daemon/Impleum.BreezeD
 
 # node Build
