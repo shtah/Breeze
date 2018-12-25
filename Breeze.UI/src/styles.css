@@ -196,7 +196,7 @@ code {
 }
 
 .badge.badge-success {
-  color: #2ECCA9;
+  color: #F5FCFF;
 }
 
 .status {
@@ -236,7 +236,7 @@ code {
 }
 
 .status li.statusOK i {
-  color: #2ECCA9;
+  color: #F5FCFF;
   font-size: .9em;
   position: absolute;
 }
@@ -435,7 +435,7 @@ input.cmn-toggle-round-flat:checked + label:after {
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #2ECCA9;
+  stroke: #F5FCFF;
   fill: none;
   animation: stroke 1s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
@@ -449,7 +449,7 @@ input.cmn-toggle-round-flat:checked + label:after {
   stroke: #fff;
   stroke-miterlimit: 10;
   margin: 4em auto 2em;
-  box-shadow: inset 0px 0px 0px #2ECCA9;
+  box-shadow: inset 0px 0px 0px #F5FCFF;
   animation: fill .4s ease-in-out .8s forwards, scale .6s ease-in-out .9s both;
 }
 
@@ -477,7 +477,7 @@ input.cmn-toggle-round-flat:checked + label:after {
 
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px #2ECCA9;
+    box-shadow: inset 0px 0px 0px 30px #F5FCFF;
   }
 }
 
@@ -674,14 +674,14 @@ input.cmn-toggle-round-flat:checked + label:after {
 .slider-track {
   position: absolute;
   cursor: pointer;
-  background-image: linear-gradient(270deg, #2ECCA9 0%, #F7931A 100%);
+  background-image: linear-gradient(270deg, #F5FCFF 0%, #F7931A 100%);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
 
 .slider-selection {
   position: absolute;
-  background-image: linear-gradient(270deg, #2ECCA9 0%, #F7931A 51%, #FF5B8A 100%);
+  background-image: linear-gradient(270deg, #F5FCFF 0%, #F7931A 51%, #FF5B8A 100%);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -727,7 +727,7 @@ input.cmn-toggle-round-flat:checked + label:after {
   top: 0;
   width: 14px;
   height: 14px;
-  background-color: #2ECCA9 !important;
+  background-color: #F5FCFF !important;
 }
 
 .slider-handle.round {
@@ -782,8 +782,8 @@ input.cmn-toggle-round-flat:checked + label:after {
 }
 
 .slider-tick.in-selection:nth-child(3) {
-  border-color: #2ECCA9;
-  background-color: #2ECCA9;
+  border-color: #F5FCFF;
+  background-color: #F5FCFF;
   opacity: 1;
 }
 
@@ -3427,8 +3427,8 @@ fieldset[disabled] a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #2ECCA9;
-  border-color: #2ECCA9;
+  background-color: #F5FCFF;
+  border-color: #F5FCFF;
   border-radius: 5rem;
 }
 
@@ -3443,8 +3443,8 @@ fieldset[disabled] a.btn {
 }
 
 .btn-success.disabled, .btn-success:disabled {
-  background-color: #2ECCA9;
-  border-color: #2ECCA9;
+  background-color: #F5FCFF;
+  border-color: #F5FCFF;
 }
 
 .btn-success:active, .btn-success.active,
@@ -3633,16 +3633,16 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-success {
-  color: #2ECCA9;
+  color: #F5FCFF;
   background-image: none;
   background-color: transparent;
-  border-color: #2ECCA9;
+  border-color: #F5FCFF;
 }
 
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #2ECCA9;
-  border-color: #2ECCA9;
+  background-color: #F5FCFF;
+  border-color: #F5FCFF;
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
@@ -3650,15 +3650,15 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-success.disabled, .btn-outline-success:disabled {
-  color: #2ECCA9;
+  color: #F5FCFF;
   background-color: transparent;
 }
 
 .btn-outline-success:active, .btn-outline-success.active,
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
-  background-color: #2ECCA9;
-  border-color: #2ECCA9;
+  background-color: #F5FCFF;
+  border-color: #F5FCFF;
 }
 
 .btn-outline-warning {
@@ -4965,8 +4965,8 @@ tbody.collapse.show {
 }
 
 .card-success {
-  background-color: #2ECCA9;
-  border-color: #2ECCA9;
+  background-color: #F5FCFF;
+  border-color: #F5FCFF;
 }
 
 .card-success .card-header,
@@ -5021,7 +5021,7 @@ tbody.collapse.show {
 
 .card-outline-success {
   background-color: transparent;
-  border-color: #2ECCA9;
+  border-color: #F5FCFF;
 }
 
 .card-outline-warning {
@@ -6402,7 +6402,7 @@ a.bg-primary:focus, a.bg-primary:hover {
 }
 
 .bg-success {
-  background-color: #2ECCA9 !important;
+  background-color: #F5FCFF !important;
 }
 
 a.bg-success:focus, a.bg-success:hover {
@@ -9022,7 +9022,7 @@ a.text-primary:focus, a.text-primary:hover {
 }
 
 .text-success {
-  color: #2ECCA9 !important;
+  color: #F5FCFF !important;
 }
 
 a.text-success:focus, a.text-success:hover {

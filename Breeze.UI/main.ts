@@ -253,7 +253,7 @@ function writeLog(msg) {
 
 function createMenu() {
   const Menu = electron.Menu;
-
+  
   // Create the Application's main menu
   var menuTemplate = [{
     label: "Application",
