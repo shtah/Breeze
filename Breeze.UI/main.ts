@@ -20,6 +20,8 @@ if (args.some(val => val === "--mainnet" || val === "-mainnet")) {
   testnet = false;
 }
 
+testnet = true;
+
 if (serve) {
   require('electron-reload')(__dirname, {
     electron: require('${__dirname}/../../node_modules/electron')
@@ -124,7 +126,7 @@ function closeBitcoinApi() {
   req.write('');
   req.end();
   }
-};
+};  
 
 function closeImpleumApi() {
   // if (process.platform !== 'darwin' && !serve) {
