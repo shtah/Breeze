@@ -18,7 +18,7 @@ branches:
 #---------------------------------#
 
 image: Visual Studio 2017
-clone_folder: c:\projects\breeze
+clone_folder: c:\projects\lite
 configuration:
   - Release
 
