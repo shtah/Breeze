@@ -44,7 +44,7 @@ function createWindow() {
     frame: true,
     minWidth: 1200,
     minHeight: 650,
-    title: "Breeze Wallet"
+    title: "Lite Wallet"
   });
 
    // and load the index.html of the app.
@@ -76,7 +76,7 @@ function createWindow() {
 // Some APIs can only be used after this event occurs.
 app.on('ready', function () {
   if (serve) {
-    console.log("Impleum Breeze UI was started in development mode. This requires the user to be running the Breeze Daemon himself.")
+    console.log("Impleum Lite UI was started in development mode. This requires the user to be running the Lite Daemon himself.")
   }
   else {
     startBitcoinApi();
@@ -149,7 +149,7 @@ function startBitcoinApi() {
   var bitcoinProcess;
   const spawnBitcoin = require('child_process').spawn;
 
-  //Start Breeze Bitcoin Daemon
+  //Start Lite Bitcoin Daemon
   let apiPath = path.resolve(__dirname, 'assets//daemon//Impleum.BreezeD');
   if (os.platform(
 
@@ -163,7 +163,7 @@ function startBitcoinApi() {
 
 
   if(!testnet) {
-    bitcoinProcess = spawnBitcoin(apiPath, {
+    bitcoinProcess = spawnBitcoin(apiPath, ['-testnet'], {
       detached: true
     });
   } else if (testnet) {
@@ -182,7 +182,7 @@ function startImpleumApi() {
   var impleumProcess;
   const spawnImpleum = require('child_process').spawn;
 
-  //Start Breeze Impleum Daemon
+  //Start Lite Impleum Daemon
   let apiPath = path.resolve(__dirname, 'assets//daemon//Impleum.BreezeD');
   if (os.platform() === 'win32') {
     apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Impleum.BreezeD.exe');
@@ -193,7 +193,7 @@ function startImpleumApi() {
   }
 
   if (!testnet) {
-    impleumProcess = spawnImpleum(apiPath, ['impleum'], {
+    impleumProcess = spawnImpleum(apiPath, ['impleum', '-testnet'], {
       detached: true
     });
   } else if (testnet) {
@@ -234,7 +234,7 @@ function createTray() {
       }
     }
   ]);
-  systemTray.setToolTip('Impleum Breeze Wallet');
+  systemTray.setToolTip('Impleum Lite Wallet');
   systemTray.setContextMenu(contextMenu);
   systemTray.on('click', function() {
     if (!mainWindow.isVisible()) {
