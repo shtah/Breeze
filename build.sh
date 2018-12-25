@@ -4,15 +4,15 @@
 set -o errexit
 
 # define a few variables
-node_output_name="Breeze-$os_platform-$arch"
-app_output_name="breeze-$TRAVIS_OS_NAME-$arch"
-app_output_zip_name="breeze-$TRAVIS_OS_NAME-$arch.zip"
+node_output_name="lite-$os_platform-$arch"
+app_output_name="lite-$TRAVIS_OS_NAME-$arch"
+app_output_zip_name="lite-$TRAVIS_OS_NAME-$arch.zip"
 
 if [ "$TRAVIS_OS_NAME" = "osx" ]
 then
-  dotnet_resources_path_in_app=$TRAVIS_BUILD_DIR/breeze_out/$app_output_name/Breeze.app/contents/resources/app/assets/daemon
+  dotnet_resources_path_in_app=$TRAVIS_BUILD_DIR/lite_out/$app_output_name/Breeze.app/contents/resources/app/assets/daemon
 else
-  dotnet_resources_path_in_app=$TRAVIS_BUILD_DIR/breeze_out/$app_output_name/resources/app/assets/daemon
+  dotnet_resources_path_in_app=$TRAVIS_BUILD_DIR/lite_out/$app_output_name/resources/app/assets/daemon
 fi
 
 echo "current environment variables:"
