@@ -148,15 +148,15 @@ function startBitcoinApi() {
   const spawnBitcoin = require('child_process').spawn;
 
   //Start Breeze Bitcoin Daemon
-  let apiPath = path.resolve(__dirname, 'assets//daemon//Stratis.BreezeD');
+  let apiPath = path.resolve(__dirname, 'assets//daemon//Impleum.BreezeD');
   if (os.platform(
 
   ) === 'win32') {
-    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Stratis.BreezeD.exe');
+    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Impleum.BreezeD.exe');
   } else if(os.platform() === 'linux') {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   } else {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   }
 
 
@@ -181,13 +181,13 @@ function startImpleumApi() {
   const spawnImpleum = require('child_process').spawn;
 
   //Start Breeze Impleum Daemon
-  let apiPath = path.resolve(__dirname, 'assets//daemon//Stratis.BreezeD');
+  let apiPath = path.resolve(__dirname, 'assets//daemon//Impleum.BreezeD');
   if (os.platform() === 'win32') {
-    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Stratis.BreezeD.exe');
+    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Impleum.BreezeD.exe');
   } else if(os.platform() === 'linux') {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   } else {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.BreezeD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Impleum.BreezeD');
   }
 
   if (!testnet) {
