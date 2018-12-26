@@ -23,7 +23,7 @@ git submodule update --init --recursive
 cd ImpleumBitcoinFullNode/Impleum.BreezeD
 dotnet build
 
-# Run the Bitcoin and Stratis full-SPV daemons on testnet in separate terminals
+# Run the Bitcoin and Impleum full-SPV daemons on testnet in separate terminals
 dotnet run -testnet
 dotnet run impleum -testnet
 ```
