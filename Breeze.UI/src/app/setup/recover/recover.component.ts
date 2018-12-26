@@ -177,7 +177,7 @@ export class RecoverComponent implements OnInit {
 
   private AlertIfNeeded(bitcoinErrorMessage: string, stratisErrorMessage: string) {
         if(bitcoinErrorMessage !== "" || stratisErrorMessage !== "") {
-          let errorMessage = "<strong>Bitcoin wallet recovery:</strong><br>" + bitcoinErrorMessage + "<br><br><strong>Stratis wallet recovery:</strong><br>" + stratisErrorMessage;
+          let errorMessage = "<strong>Bitcoin wallet recovery:</strong><br>" + bitcoinErrorMessage + "<br><br><strong>Impleum wallet recovery:</strong><br>" + stratisErrorMessage;
           this.genericModalService.openModal(null, errorMessage);
     }
   }
